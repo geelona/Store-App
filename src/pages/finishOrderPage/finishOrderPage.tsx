@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../state/store";
 import { clearCart } from "../../state/cartSlice";
+import React from "react";
 
 export default function FinishOrderPage() {
     const location = useLocation();
