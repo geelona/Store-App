@@ -1,0 +1,41 @@
+.shipmentInformationPage-container {
+    flex-grow: 1;
+    background: #f2f5f7;
+    padding: 1.5vw 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+
+    & > h1 {
+        font-size: 1.67vw;
+        color: #243573;
+    }
+
+    & > form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        & > .default-input-container {
+            width: 30%;
+        }
+
+        & > .form__localization {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            gap: 2vw;
+
+            & > .default-input-container {
+                width: 25%;
+            }
+        }
+    }
+
+    & > .shipmentInformationPage-container__submitOrderButton-container {
+        width: 7.8vw;
+        height: 1.875vw;
+        position: relative;
+        padding: 0.625vw 0.52vw;
+    }
+}

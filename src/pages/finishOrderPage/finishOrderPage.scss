@@ -1,0 +1,130 @@
+.finishOrderPage-container {
+    flex-grow: 1;
+    background: #f2f5f7;
+    padding: 1.5vw 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+    & > h1 {
+        font-size: 1.67vw;
+        color: #243573;
+    }
+
+    & > .finishOrderPage-container__thankful-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vw;
+
+        & > img {
+            width: 4.1vw;
+            height: 4.1vw;
+        }
+
+        & > h1 {
+            font-size: 1.67vw;
+            color: #243573;
+        }
+
+        & > p:not(:last-child) {
+            font-size: 0.83vw;
+            color: #243573;
+        }
+
+        & > p:last-child {
+            font-size: 0.83vw;
+            color: #737373;
+        }
+
+        & > h2 {
+            font-size: 0.83vw;
+            color: #243573;
+            font-weight: bold;
+        }
+    }
+
+    & > .finishOrderPage-container__info {
+        width: 100%;
+        gap: 2vw;
+
+        & > div {
+            flex: 1;
+            background: white;
+            padding: 0.5vw;
+            border-radius: 0.5vw;
+            box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.1);
+
+            & > .title {
+                gap: 0.5vw;
+                color: #243573;
+                font-size: 0.78vw;
+                font-weight: bold;
+                margin-bottom: 0.5vw;
+            }
+
+            & > p {
+                font-size: 0.85vw;
+            }
+        }
+    }
+
+    & > .finishOrderPage-container__products {
+        background: white;
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.1);
+
+        & > .title {
+            gap: 0.5vw;
+            color: #243573;
+            font-size: 0.78vw;
+            font-weight: bold;
+            margin-bottom: 0.5vw;
+        }
+
+        & > .finishOrderPage-container__products__product {
+            & > .finishOrderPage-container__products__product__item {
+                padding: 0.5vw;
+                gap: 0.5vw;
+                border-bottom: solid 0.1vw #c8c8c8;
+                & > img {
+                    width: 4.7vw;
+                    height: 4.7vw;
+                    object-fit: contain;
+                }
+
+                & > .finishOrderPage-container__products__product__item__info {
+                    font-size: 0.85vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    & > .price {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            & > .bill {
+                padding: 0.5vw;
+                display: flex;
+                flex-direction: row;
+                gap: 3vw;
+                font-size: 1.04vw;
+
+                & > div {
+                    & > .accent {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    & > .finishOrderPage-container__continue-shopping-button-container {
+        position: relative;
+        width: 7.8vw;
+        height: 1.875vw;
+    }
+}

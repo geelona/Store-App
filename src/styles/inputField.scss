@@ -1,0 +1,34 @@
+.default-input-container {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+        color: #243573;
+        font-size: 0.6vw;
+        font-weight: bold;
+    }
+
+    & > input,
+    & > select {
+        color: #243573;
+        outline: none;
+        font-size: 0.85vw;
+        background: transparent;
+        border-bottom: solid 0.1vw #737373;
+
+        &::placeholder {
+            color: #243573;
+            opacity: 80%;
+        }
+    }
+
+    & > .input-error {
+        border-color: #ff0000;
+    }
+
+    & > p {
+        color: #ff0000;
+        font-size: 0.6vw;
+        margin-top: 0.2vw;
+    }
+}

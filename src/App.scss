@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/button.scss";
+@import "./styles/links.scss";
+@import "./styles/form.scss";
+@import "./styles/inputField.scss";
+
+@import "./components/header/header.scss";
+@import "./components/linkState/linkState.scss";
+
+@import "./pages/cartPage/cartPage.scss";
+@import "./pages/contactInformationPage/contactInformationPage.scss";
+@import "./pages/shipmentInformationPage/shipmentInformationPage.scss";
+@import "./pages/finishOrderPage/finishOrderPage.scss";
+
+.body-margin-box {
+    margin-top: 3.5vw;
+}

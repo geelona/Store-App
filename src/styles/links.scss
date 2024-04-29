@@ -1,0 +1,11 @@
+.default-link {
+    color: #5B6896;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.default-link--active {
+    color: #10B32A;
+}

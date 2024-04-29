@@ -1,0 +1,102 @@
+.mainPage-container {
+    flex-grow: 1;
+    background: #F2F5F7;
+
+    .mainPage-container__data {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2.5vw;
+        padding: 2vw 4vw;
+        height: 100%;
+
+        .mainPage-container__data__item {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 12.5vw;
+            height: 21vw;
+            background: white;
+            font-size: 1.5vw;
+            border-radius: 1vw;
+            gap: 0.5vw;
+            padding: 0.5vw;
+            box-shadow: 0 0.2vw 0.4vw 0 rgba(0,0,0,0.1);
+
+            .mainPage-container__data__item__image {
+                width: 75%;
+                height: 60%;
+                object-fit: contain;
+                border-radius: 1vw 1vw 0 0;
+                align-self: center;
+            }
+
+            .mainPage-container__data__item__title {
+                font-size: 0.8vw;
+            }
+
+            .mainPage-container__data__item__price {
+                font-size: 1.25vw;
+            }
+
+            .mainPage-container__data__item__button-container {
+                position: relative;
+                width: 100%;
+                height: 2vw;
+                align-self: center;
+                margin-top: auto;
+
+                & > .mainPage-container__data__item__button-container__button {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+
+                    & > .mainPage-container__data__item__button-container__button__plus {
+                        width: 0.66vw;
+                        height: 0.66vw;
+                    }
+
+                    & > .mainPage-container__data__item__button-container__button__check {
+                        width: 0.68vw;
+                        height: 0.49vw;;
+                    }
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 20%;
+                        height: 100%;
+                        background: rgba(#171717, 0.1);
+                        transition: all 0.3s;
+                        display: none;
+                    }
+                }
+
+                & > .mainPage-container__data__item__button-container__button__delay-animation {
+
+                    &::after {
+                        display: block;
+                        animation: buttonDelay 1s linear;
+                    }
+                }
+            }
+        }
+
+        .mainPage-container__data__loading {
+            font-size: 2vw;
+            font-weight: bold;
+            align-self: center;
+        }
+    }
+}
+
+@keyframes buttonDelay {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
